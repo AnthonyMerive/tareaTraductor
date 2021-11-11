@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Principal {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         String palabraTraducir = "";
 
@@ -23,7 +23,9 @@ public class Principal {
 
         palabras.leer("PalabrasIngles.txt");
 
-        System.out.println("Traduccion: "+palabraTraducir);
+        Guardar traduccion = new Guardar();
+
+        traduccion.escribir("PalabrasGuardadas.txt", palabraTraducir);
 
     }
 }
