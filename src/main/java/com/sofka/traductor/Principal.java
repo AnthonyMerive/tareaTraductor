@@ -1,23 +1,14 @@
 package com.sofka.traductor;
 
-import java.io.*;
+import java.util.Scanner;
 
 public class Principal {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        String palabraTraducir = "";
-
-        System.out.println("Introduzca la palabra a traducir: ");
-
-        InputStreamReader entrada = new InputStreamReader(System.in);
-        BufferedReader buffer = new BufferedReader(entrada);
-
-        try {
-            palabraTraducir = buffer.readLine();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        Scanner captura = new Scanner(System.in);
+        System.out.println("Ingrese la palabra a traducir: ");
+        String palabraTraducir = captura.nextLine();
 
         //Traductor de palabras:
         Traductor palabras = new Traductor();

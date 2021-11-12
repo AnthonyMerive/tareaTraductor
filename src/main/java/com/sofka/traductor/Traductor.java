@@ -28,7 +28,7 @@ public class Traductor {
 
             if(!encontrado) {
 
-                System.out.println("\nPalabra no econtrada en nuestro diccionario\n");
+                System.out.println("\nPalabra no econtrada en nuestro diccionario");
 
                 Guardar traduccion = new Guardar();
 

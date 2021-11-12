@@ -6,3 +6,6 @@ Se traduce como "Dog"
 
 Hola
 Se traduce como "Hello"
+
+Chao
+Se traduce como "Good Bye"
