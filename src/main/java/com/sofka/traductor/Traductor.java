@@ -21,6 +21,8 @@ public class Traductor {
                 System.out.println(resultado);
             }
 
+            reader.close();
+
         }catch(Exception e){
             System.out.println(e.getMessage());
         }

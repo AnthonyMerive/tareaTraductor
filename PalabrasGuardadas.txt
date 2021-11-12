@@ -1,0 +1,5 @@
+Registros almacenados:
+
+hola
+
+prueba

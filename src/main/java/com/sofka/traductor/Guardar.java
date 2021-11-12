@@ -4,12 +4,17 @@ import java.io.*;
 
 public class Guardar {
 
-    public void escribir(String archivo, String palabra) {
+    public void escribir(String archivo, String texto) {
 
         try {
-            FileWriter fichero = new FileWriter(archivo);
+            FileWriter fichero = new FileWriter(archivo, true);
 
-            fichero.write(palabra);
+            fichero.write("\n"+texto+"\n");
+
+            fichero.close();
+
+            System.out.println("agregado "+texto+" con exito");
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
