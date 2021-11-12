@@ -2,28 +2,41 @@ package com.sofka.traductor;
 
 import java.io.*;
 
-
 public class Traductor {
 
-    public void leer (String archivo){
+    public void leer(String archivo, String busqueda) {
         try {
-            FileReader reader = new FileReader(archivo);
-            BufferedReader buffer = new BufferedReader(reader);
+            BufferedReader reader = new BufferedReader(new FileReader(archivo));
 
-            String resultado="";
+            String resultado = "";
+            boolean encontrado = false;
 
-            while(resultado!=null){
+            while ((resultado = reader.readLine()) != null) {
 
-                resultado = buffer.readLine();
+                if (resultado.toUpperCase().equalsIgnoreCase(busqueda)) {
 
-                if(resultado==null) break;
+                    resultado += " " +reader.readLine() + "\n";
 
-                System.out.println(resultado);
+                    System.out.println(resultado);
+
+                    encontrado = true;
+                    break;
+
+                }
+
             }
 
-            reader.close();
+            if(!encontrado) {
 
-        }catch(Exception e){
+                System.out.println("\nPalabra no econtrada en nuestro diccionario\n");
+
+                Guardar traduccion = new Guardar();
+
+                traduccion.escribir("PalabrasGuardadas.txt", busqueda);
+
+            }
+
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }

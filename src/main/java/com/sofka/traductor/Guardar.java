@@ -13,7 +13,7 @@ public class Guardar {
 
             fichero.close();
 
-            System.out.println("agregado "+texto+" con exito");
+            System.out.println("La palabra "+texto+" sera guardada para agregar su traduccion... Gracias!");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());

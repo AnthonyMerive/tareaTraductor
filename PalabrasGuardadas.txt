@@ -1,5 +1,4 @@
-Registros almacenados:
+Palabras que se deben traducir:
+ninguno
 
-hola
-
-prueba
+hasta luego

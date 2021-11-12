@@ -1,2 +1,8 @@
-Cat
-Dog
+Gato
+Se traduce como "Cat"
+
+Perro
+Se traduce como "Dog"
+
+Hola
+Se traduce como "Hello"

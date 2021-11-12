@@ -16,16 +16,12 @@ public class Principal {
         try {
             palabraTraducir = buffer.readLine();
         } catch (IOException e) {
-            System.out.println("Error");
+            System.out.println(e.getMessage());
         }
 
+        //Traductor de palabras:
         Traductor palabras = new Traductor();
-
-        palabras.leer("PalabrasIngles.txt");
-
-        Guardar traduccion = new Guardar();
-
-        traduccion.escribir("PalabrasGuardadas.txt", palabraTraducir);
+        palabras.leer("PalabrasIngles.txt", palabraTraducir);
 
     }
 }
