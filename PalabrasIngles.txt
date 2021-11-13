@@ -9,3 +9,9 @@ Se traduce como "Hello"
 
 Chao
 Se traduce como "Good Bye"
+
+casa
+Se traduce como "house"
+
+programa
+Se traduce como "program"
